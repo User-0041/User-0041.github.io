@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html ng-app="dtapp" ng-controller="dtctrl" ng-init="initResults()" ng-cloak>
+
+    <head>
+
+        <title>{{ test.name }} Results | Dichotomy Tests</title>
+
+        <!-- Metadata -->
+        <meta charset="utf-8"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="title" content="{{ test.name }} Results | Dichotomy Tests"/>
+        <meta name="description" content="{{ test.description }}"/>
+
+        <!-- CSS, fonts and favicon -->
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dosis:500,600,700">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/buttons.css">
+
+        <!-- Libraries & APIs -->
+        <script src="https://use.fontawesome.com/663f8258f5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-cookies.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-sanitize.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container main">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 offset-lg-3 offset-md-0">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h1 class="display-4 heading"><a href="/.." class="link-none">Results: {{ test.name }}</a></h1>
+
+                            <hr>
+
+                            <p ng-show="testId !== 6" class="text-left sizing"><i>Check out our new <a href="test.html?id=6" target="_blank">psychology test</a>!</i></p>
+
+                            <p ng-bind-html="results.preamble" class="text-left sizing"></p>
+
+                            <!-- Results: Bars -->
+                            <div ng-show="isTypeBars" ng-style="{ height: (86 * results.scales.length) + additionalHeight + 'px' }">
+
+                                <div ng-repeat="i in range(results.scales.length)" class="axis" ng-style="{ marginBottom: (isTypeBarsOverall && i === 0) ? '40px' : '20px' }">
+
+                                    <div class="label" ng-style="{ fontWeight: (isTypeBarsOverall && i === 0) ? 600 : 500 }">
+                                        <span>{{ results.scales[i].a.text }} </span>
+                                        <span class="label-vs">vs</span>
+                                        <span> {{ results.scales[i].b.text }}</span>
+                                    </div>
+
+                                    <div class="icon icon-left">
+                                        <img alt="icon-l" class="img" src="{{ results.scales[i].a.path }}" ng-style="{ backgroundColor: results.scales[i].a.color }">
+                                    </div>
+                                    <div class="icon icon-right">
+                                        <img alt="icon-r" class="img" src="{{ results.scales[i].b.path }}" ng-style="{ backgroundColor: results.scales[i].b.color } ">
+                                    </div>
+
+                                    <div class="label-percent label-percent-left">
+                                        {{ (percentages[i] > 0.1) ? ((100 * percentages[i]).toFixed(1) + '%') : '' }}
+                                    </div>
+                                    <div class="label-percent label-percent-right">
+                                        {{ (percentages[i] < 0.9) ? ((100 * (1 - percentages[i])).toFixed(1) + '%') : '' }}
+                                    </div>
+
+                                    <img alt="bar" class="bar" src="assets/images/bar.png">
+
+                                    <img alt="fill-l" class="fill fill-l" src="assets/images/fill.png" ng-style="{ backgroundColor: results.scales[i].a.color, width: 'calc((70% - 26px) * ' + percentages[i] + ')' }">
+                                    <img alt="fill-m" class="fill fill-m" src="assets/images/fill.png" ng-style="{ width: 'calc((70% - 26px) * ' + percentages[i] + ') + 0.8px'  }">
+                                    <img alt="fill-r" class="fill fill-r" src="assets/images/fill.png" ng-style="{ backgroundColor: results.scales[i].b.color }">
+
+                                    <div ng-show="isTypeBarsOverall && i === 0" style="width: 70%; margin-left: 15%; padding-top: 49px">
+                                        <hr style="border-color: rgba(0, 0, 0, .2)">
+                                    </div>
+
+                                </div>
+
+                                <div ng-show="markers.length > 0" class="d-flex justify-content-center">
+                                    <a ng-repeat="marker in markers" href="{{ marker.url }}" target="_blank">
+                                        <img class="marker-img" src="{{ marker.path }}" alt="{{ marker.name }}" title="{{ marker.name }}" data-placement="top" data-toggle="tooltip" onmouseenter="$(this).tooltip('show')">
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- Results: Psychology (overall) -->
+                            <div ng-show="isTypePsychOverall" class="results-container-psych">
+
+                                <h6 style="margin-bottom: 15px">Overall</h6>
+
+                                <div class="progress progress-psych">
+                                    <div class="progress-bar progress-bar-striped progress-bar-psych" ng-style="{ width: (mean(percentages) * 100) + '%' }">{{ Math.round(mean(percentages) * 100) + '%' }}</div>
+                                </div>
+
+                                <h6>Breakdown</h6>
+
+                                <div ng-repeat="i in range(results.scales.length)">
+
+                                    <p class="small">{{ results.scales[i].name }}</p>
+                                    <div class="progress progress-psych">
+                                        <div class="progress-bar progress-bar-striped progress-bar-psych {{ results.scales[i].class }}" ng-style="{ width: (percentages[i] * 100) + '%' }">{{ Math.round(percentages[i] * 100) + '%' }}</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Results: Compass -->
+                            <div ng-show="isTypeCompass">
+
+                                <canvas id="compass-canvas" width="600" height="600"></canvas>
+
+                                <p class="compass-text">
+                                    <b>{{ results.scales[0].axisName }}</b>:<br>
+                                    <i>{{ results.scales[0].a.text }}</i> vs <i>{{ results.scales[0].b.text }}</i>: {{ ((percentages[0] - 0.5) * 20).toFixed(1) }}
+                                    <br>
+                                    <b>{{ results.scales[1].axisName }}</b>:<br>
+                                    <i>{{ results.scales[1].a.text }}</i> vs <i>{{ results.scales[1].b.text }}</i>: {{ ((percentages[1] - 0.5) * 20).toFixed(1) }}
+                                </p>
+
+                            </div>
+
+                            <!-- Explanation: Axes -->
+                            <div ng-show="showExplainAxes">
+
+                                <button type="button" data-toggle="collapse" data-target="#explain-axes" class="btn btn-outline-dark btn-block">What do my results mean?</button>
+
+                                <div id="explain-axes" class="collapse">
+
+                                    <div ng-repeat="i in range(results.scales.length)" class="explain-axis">
+
+                                        <span style="font-weight: bold;">{{ results.scales[i].axisName }}: </span>
+                                        <span>{{ results.scales[i].axisDesc }}</span>
+
+                                        <br>
+
+                                        <span class="explain-content">
+
+                                            <span style="font-style: italic;">{{ results.scales[i].a.text }}: </span>
+                                            <span>{{ results.scales[i].a.desc }}</span>
+
+                                            <br>
+
+                                            <span style="font-style: italic;">{{ results.scales[i].b.text }}: </span>
+                                            <span>{{ results.scales[i].b.desc }}</span>
+
+                                        </span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Explanation: Psychology -->
+                            <div ng-show="showExplainPsych">
+
+                                <button type="button" data-toggle="collapse" data-target="#explain-psych" class="btn btn-outline-dark btn-block">What do my results mean?</button>
+
+                                <div id="explain-psych" class="collapse">
+
+                                    <div ng-repeat="i in range(results.scales.length)" class="explain-axis">
+
+                                        <span style="font-weight: bold;">{{ results.scales[i].name }}: </span>
+                                        <span>{{ results.scales[i].desc }}</span>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <p class="text-center small sizing mt-10">Dichotomy Tests - 2020</p>
+                            <p class="text-center small sizing"><a href="privacy.html" target="_blank" class="link-no-underline">Privacy Policy</a></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Local JavaScript files -->
+        <script src="js/constants.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/compass.js"></script>
+        <script src="js/dtapp.js"></script>
+
+    </body>
+
+</html>

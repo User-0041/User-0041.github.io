@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html ng-app="dtapp" ng-controller="dtctrl" ng-init="initTest()" ng-cloak>
+
+    <head>
+
+        <title>{{ test.name }} | Dichotomy Tests</title>
+
+        <!-- Metadata -->
+        <meta charset="utf-8"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="title" content="{{ test.name }} | Dichotomy Tests"/>
+        <meta name="description" content="{{ test.description }}"/>
+
+        <!-- CSS, fonts and favicon -->
+        <link rel="icon" type="image/png" href="assets/images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Dosis:500,600,700">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/buttons.css">
+
+        <!-- Libraries & APIs -->
+        <script src="https://use.fontawesome.com/663f8258f5.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-cookies.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular-sanitize.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+
+        <div class="container main">
+
+            <div class="row">
+
+                <div class="col-lg-6 col-md-12 offset-lg-3 offset-md-0">
+
+                    <div class="card">
+
+                        <div class="card-body">
+
+                            <h1 class="display-4 heading"><a href="/.." class="link-none">{{ test.name }}</a></h1>
+
+                            <hr>
+
+                            <!-- Preamble -->
+                            <div ng-show="!started">
+
+                                <p ng-show="resultsExist" class="text-left sizing"><i>You have taken this test before. Click <a href="#" ng-click="goToResults()">here</a> to see your results!</i></p>
+
+                                <p ng-bind-html="test.preamble" class="text-left sizing"></p>
+                                <button type="button" ng-click="start()" class="btn btn-outline-secondary btn-block sizing btn-{{ test.color }}">Begin test</button>
+
+                            </div>
+
+                            <!-- Questions -->
+                            <div ng-show="started && !inSurvey">
+
+                                <div class="card">
+
+                                    <div class="card-header">Question {{ current }} of {{ test.numQuestions }}</div>
+
+                                    <div class="progress progress-test">
+                                        <div class="progress-bar progress-bar-test" ng-style="{ width: (percentage + '%') }"></div>
+                                    </div>
+
+                                    <div class="card-body">
+
+                                        <p class="small font-italic">{{ test.instruction }}</p>
+                                        <p ng-show="!isTypeScenario">{{ test.questions[current - 1].text }}</p>
+
+                                        <hr>
+
+                                        <!-- Type: Statement -->
+                                        <div ng-show="isTypeStatement">
+
+                                            <button type="button" ng-click="next(1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-str-agree">Strongly Agree</button>
+                                            <button type="button" ng-click="next(hideNeutral ? 0.65: 0.5)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-agree">Agree</button>
+                                            <button ng-show="!hideNeutral" type="button" ng-click="next(0.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-neutral">Neutral/I don't know</button>
+                                            <button type="button" ng-click="next(hideNeutral ? -0.65: -0.5)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-disagree">Disagree</button>
+                                            <button type="button" ng-click="next(-1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-str-disagree">Strongly Disagree</button>
+
+                                        </div>
+
+                                        <!-- Type: Images -->
+                                        <div ng-show="isTypeImages">
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <img src="{{ test.questions[current - 1].imageA }}" class="mx-auto d-block ct-images-img">
+                                                </div>
+                                                <div class="col-6">
+                                                    <img src="{{ test.questions[current - 1].imageB }}" class="mx-auto d-block ct-images-img">
+                                                </div>
+                                            </div>
+
+                                            <br>
+
+                                            <button type="button" ng-click="next(1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-str-left">Definitely Left</button>
+                                            <button type="button" ng-click="next(0.5)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-left">Left</button>
+                                            <button type="button" ng-click="next(0.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-neutral-light">Neutral/I don't know</button>
+                                            <button type="button" ng-click="next(-0.5)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-right">Right</button>
+                                            <button type="button" ng-click="next(-1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-str-right">Definitely Right</button>
+
+                                        </div>
+
+                                        <!-- Type: Scenario -->
+                                        <div ng-show="isTypeScenario">
+
+                                            <button type="button" ng-click="next(1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-scen-a">{{ test.questions[current - 1].textA }}</button>
+                                            <button type="button" ng-click="next(-1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-scen-b">{{ test.questions[current - 1].textB }}</button>
+
+                                        </div>
+
+                                        <!-- Type: Custom (Fear) -->
+                                        <div ng-show="isTypeCustomFear">
+
+                                            <button type="button" ng-click="next(1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-fear-7">Terror</button>
+                                            <button type="button" ng-click="next(0.666)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-fear-6">Great fear</button>
+                                            <button type="button" ng-click="next(0.333)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-fear-5">Much fear</button>
+                                            <button type="button" ng-click="next(0.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-fear-4">Some fear</button>
+                                            <button type="button" ng-click="next(-0.333)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-fear-3">A little fear</button>
+                                            <button type="button" ng-click="next(-0.666)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-fear-2">Very little fear</button>
+                                            <button type="button" ng-click="next(-1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-fear-1">No fear</button>
+
+                                        </div>
+
+                                        <!-- Type: Custom (OCD) -->
+                                        <div ng-show="isTypeCustomOcd">
+
+                                            <button type="button" ng-click="next(1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-str-agree">Very much</button>
+                                            <button type="button" ng-click="next(0.5)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-agree">A lot</button>
+                                            <button type="button" ng-click="next(0.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-neutral-color">Quite a lot</button>
+                                            <button type="button" ng-click="next(-0.5)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-disagree">A little</button>
+                                            <button type="button" ng-click="next(-1.0)" class="btn btn-outline-secondary btn-sm btn-block sizing btn-str-disagree">Not at all</button>
+
+                                        </div>
+
+                                        <hr>
+
+                                        <button type="button" ng-click="prev()" ng-disabled="current == 1" class="btn btn-dark btn-block btn-sm sizing-small">Previous</button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <!-- Survey -->
+                            <div ng-show="inSurvey">
+
+                                <p>We'd really appreciate it if you answered these quick questions but <span style="font-weight: 600">you can skip them</span> if you want.</p>
+
+                                <div class="row">
+                                    <div class="col-md-8 offset-md-2 col-10 offset-1">
+
+                                        <form novalidate>
+
+                                            <div class="form-group">
+                                                <label><i>Which of the following political labels best describes you?</i></label>
+                                                <select ng-model="surveyScale" ng-init="surveyScale = '0'" class="form-control">
+                                                    <option value="0" selected>Prefer not to say</option>
+                                                    <option value="1">Far left</option>
+                                                    <option value="2">Left</option>
+                                                    <option value="3">Moderately left</option>
+                                                    <option value="4">Neither</option>
+                                                    <option value="5">Moderately right</option>
+                                                    <option value="6">Right</option>
+                                                    <option value="7">Far right</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label><i>What is your age?</i></label>
+                                                <select ng-model="surveyAge" ng-init="surveyAge = '0'" class="form-control">
+                                                    <option value="0" selected>Prefer not to say</option>
+                                                    <option value="1">under 18</option>
+                                                    <option value="2">18-24</option>
+                                                    <option value="3">25-34</option>
+                                                    <option value="4">35-44</option>
+                                                    <option value="5">45-54</option>
+                                                    <option value="6">over 55</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label><i>What is your gender?</i></label>
+                                                <select ng-model="surveyGender" ng-init="surveyGender = '0'" class="form-control">
+                                                    <option value="0" selected>Prefer not to say</option>
+                                                    <option value="1">Male</option>
+                                                    <option value="2">Female</option>
+                                                    <option value="3">Other</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label><i>What is your ethnicity?</i></label>
+                                                <select ng-model="surveyEthnicity" ng-init="surveyEthnicity = '0'" class="form-control">
+                                                    <option value="0" selected>Prefer not to say</option>
+                                                    <option value="1">White</option>
+                                                    <option value="2">African</option>
+                                                    <option value="3">Asian</option>
+                                                    <option value="4">Mixed</option>
+                                                    <option value="5">Other</option>
+                                                </select>
+                                            </div>
+
+                                            <button ng-click="submitSurvey()" type="button" class="btn btn-outline-danger btn-block">Just show me my results</button>
+
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p class="text-center small sizing mt-10">Dichotomy Tests - 2020</p>
+                            <p class="text-center small sizing"><a href="privacy.html" target="_blank" class="link-no-underline">Privacy Policy</a></p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Local JavaScript files -->
+        <script src="js/constants.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/dtapp.js"></script>
+
+    </body>
+
+</html>

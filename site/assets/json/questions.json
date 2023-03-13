@@ -1,0 +1,2221 @@
+{
+  "tests": [
+    {
+      "id": 0,
+      "name": "Philosophy",
+      "description": "Find out how you stand along many philosophical dichotomies from egoism and altruism to skepticism and absolutism.",
+      "color": "a51344",
+      "preamble": "You will be asked a number of questions. These will be in the form of either a statement or a scenario. For each of these questions you should state whether you agree or disagree (broadly speaking). Please try to answer as honestly as possible.",
+      "testType": 0,
+      "instruction": "How much do you agree/disagree with the following statement?",
+      "questions": [
+        {
+          "text": "I would rather find true love than be wealthy.",
+          "effects": [-10, -5, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I would rather be given an expensive car than save the life of a starving child.",
+          "effects": [0, 10, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "I would rather receive money than gifts.",
+          "effects": [0, 0, -10, 0, 0, 5, 0]
+        },
+        {
+          "text": "I would rather be in a sexual relationship without intimacy than be in an intimate relationship without sex.",
+          "effects": [5, 0, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "There is no inherent meaning to life.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "A world without colour is far darker than a world without order.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "Society will always need a strong authority.",
+          "effects": [0, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "I believe in some form of spiritual afterlife.",
+          "effects": [-10, 0, 0, 0, -5, 0, 0]
+        },
+        {
+          "text": "If I had to choose: I would save myself instead of a loved one.",
+          "effects": [0, 10, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "The ends usually justify the means.",
+          "effects": [0, 5, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "I would rather live a life of personal pleasure than settle down and have children.",
+          "effects": [5, 5, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "Life is suffering and fundamentally meaningless.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "When making a decision the underlying reasoning is always more important than the consequences.",
+          "effects": [0, 0, 5, 0, 0, 10, 0]
+        },
+        {
+          "text": "Extraordinary claims require extraordinary evidence.",
+          "effects": [0, 0, 0, 0, 0, 5, 10]
+        },
+        {
+          "text": "There is more to the world than mere material.",
+          "effects": [-10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Most people are inherently selfish.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "We should strive towards a utopian society.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Sometimes we must suffer in the present so that we can have a better future.",
+          "effects": [0, 0, -5, -10, 0, 0, 0]
+        },
+        {
+          "text": "No actions are inherently moral or immoral.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "Reason is more important than emotion.",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "It is foolish to believe a claim if there is no evidence to back it up.",
+          "effects": [0, 0, 0, 0, 0, 5, 10]
+        },
+        {
+          "text": "My mental well-being is more important to me than material possessions.",
+          "effects": [-10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Selflessness is a virtue.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Our society is fundamentally flawed and in need of radical reform.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "I prefer friendships that help me grow as a person as opposed to ones that are exciting.",
+          "effects": [0, 0, 0, -10, 0, 0, 0]
+        },
+        {
+          "text": "There is an underlying morality in everything that we do.",
+          "effects": [0, 0, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "Without music, life would be a mistake.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "There exists an omniscient, omnipotent and absolute being.",
+          "effects": [-5, 0, 0, 0, -5, 0, -10]
+        },
+        {
+          "text": "Consciousness is immaterial.",
+          "effects": [-10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "My own prosperity matters more to me than the happiness of those around me.",
+          "effects": [0, 10, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "People who desire constant success must change their conduct with the times.",
+          "effects": [0, 0, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "It is virtuous to live a simple life without an abundance of physical comforts.",
+          "effects": [-5, 0, 0, -10, -5, 0, 0]
+        },
+        {
+          "text": "We are all insignificant in the eyes of the universe.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "A society without marriage would be better than a society without divorce.",
+          "effects": [0, 0, 5, 5, 5, -10, 0]
+        },
+        {
+          "text": "Our society defines us.",
+          "effects": [0, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "Spirit and matter are two separate entities.",
+          "effects": [-10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I will usually put my family, my community or my people above my own personal goals.",
+          "effects": [0, -10, 0, -5, 0, 0, 0]
+        },
+        {
+          "text": "Revolution is sometimes a benefit to society.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "People have the right to try to achieve as much pleasure as possible.",
+          "effects": [0, 5, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "Life is despair.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "Educating the mind without educating the heart is no education at all.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "Human beings possess free will.",
+          "effects": [0, 0, 0, 0, -5, -5, -10]
+        },
+        {
+          "text": "It is good to strive towards fame, wealth and power.",
+          "effects": [10, 10, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "I would rather live alone in luxury than in poverty with friends and family.",
+          "effects": [5, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Societal progression should be carried out slowly and in small, incremental steps.",
+          "effects": [0, 0, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Pleasure is the highest good.",
+          "effects": [0, 0, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "I don't care about morality.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "It is foolish to let emotions influence your decisions. ",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Nothing can be proven to be true.",
+          "effects": [0, 0, -5, 0, 0, 0, 10]
+        },
+        {
+          "text": "A life of fame and fortune is more desirable to me than a happy and meaningful life.",
+          "effects": [10, 5, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "Be kind, for everyone you meet is fighting a hard battle.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "The world of ideas is superior to the physical world.",
+          "effects": [0, 0, 10, 0, 0, -5, 0]
+        },
+        {
+          "text": "It is better to live a frugal life.",
+          "effects": [0, 0, -5, -10, 0, 0, 0]
+        },
+        {
+          "text": "Moral statements are statements of truth or fact more than they are statements of emotion or desire.",
+          "effects": [0, 0, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "Scientific research is more important than art and music.",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "I would rather live in a wealthy society with little to no morals than live in a poor society with morals and identity.",
+          "effects": [10, 5, 0, 5, 10, 0, 0]
+        },
+        {
+          "text": "We should focus on the well-being of our community.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Our ideas stem from reality.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Our primary pursuit should be our own passions and pleasures.",
+          "effects": [0, 5, 0, 10, 5, -10, 0]
+        },
+        {
+          "text": "There is a distinction between 'good' and 'bad' that goes beyond mere human nature.",
+          "effects": [0, 0, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "The primary goal of humanity is the pursuit of knowledge",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Human beings possess a soul.",
+          "effects": [-10, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "Individuals should always act in their own self-interest.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Each person has a function in society.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "There is a way to live that is morally ideal.",
+          "effects": [0, 0, 0, -5, -10, 0, 0]
+        },
+        {
+          "text": "It is not wise to be affected by strong passions and fears.",
+          "effects": [0, 0, -5, -5, 0, 10, 0]
+        },
+        {
+          "text": "The universe obeys natural and fundamental laws.",
+          "effects": [10, 0, 5, 0, 0, 0, -10]
+        },
+        {
+          "text": "People cannot be truly altruistic.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Lofty ideals such as justice and liberty are of great importance to me.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Authority must always be ridiculed.",
+          "effects": [0, 0, 10, 0, 0, 0, 10]
+        },
+        {
+          "text": "Without faith in a God we cannot be content.",
+          "effects": [-5, 0, 0, 0, -10, 0, -10]
+        },
+        {
+          "text": "Emotion cannot be discounted when making decisions.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "We can never perceive true reality.",
+          "effects": [-10, 0, -5, 0, 0, 0, 10]
+        },
+        {
+          "text": "We should help those who are struggling in our society.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Economics",
+      "description": "How do you think the economy should be run? Find out now and see your results displayed along multiple economic axes.",
+      "color": "5158bb",
+      "preamble": "You will be asked a number of questions. These will be in the form of either a statement or a scenario. For each of these questions you should state whether you agree or disagree (broadly speaking). Please try to answer as honestly as possible.",
+      "testType": 0,
+      "instruction": "How much do you agree/disagree with the following statement?",
+      "questions": [
+        {
+          "text": "The freer the market, the freer the people.",
+          "effects": [-10, 0, 5, 0, 0, 0, 0]
+        },
+        {
+          "text": "Self-sufficiency is vital for any economy.",
+          "effects": [0, -10, 0, 0, -5, 0, 0]
+        },
+        {
+          "text": "The government continuing to intervene in the economy will eventually lead to tyranny.",
+          "effects": [0, 0, 10, 0, 0, 5, 0]
+        },
+        {
+          "text": "Providing national basic income is a realistic and desirable goal.",
+          "effects": [0, 0, 0, -10, 5, 0, 0]
+        },
+        {
+          "text": "There should be little to no industrialisation in the economy.",
+          "effects": [0, 0, 5, 0, -10, 0, 0]
+        },
+        {
+          "text": "The state should initiate price controls on various goods.",
+          "effects": [0, 0, -5, 0, 0, -10, 0]
+        },
+        {
+          "text": "A progressive income tax is good for the economy.",
+          "effects": [0, 0, 0, 0, 0, -5, -10]
+        },
+        {
+          "text": "Strong tariffs are necessary in a sovereign state.",
+          "effects": [10, -5, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "A country should be self-sufficient when it comes to providing basic needs such as food and water",
+          "effects": [0, -10, 0, 0, -5, 0, 0]
+        },
+        {
+          "text": "Economic intervention is needed in order to ensure income equality.",
+          "effects": [0, 0, -10, 0, 0, -5, 0]
+        },
+        {
+          "text": "National work programmes which ensure employment are practical and feasible.",
+          "effects": [0, 0, 0, -10, -5, 0, 0]
+        },
+        {
+          "text": "The economy should be based around agriculture and natural resources.",
+          "effects": [0, -5, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "Long term, multi-year plans are important initiatives for the state economy.",
+          "effects": [0, 0, -5, 0, 0, -10, 0]
+        },
+        {
+          "text": "Luxury goods should be highly taxed.",
+          "effects": [0, 0, -5, 0, 0, 0, -10]
+        },
+        {
+          "text": "Goods produced within the country should receive subsidies to help them out-compete foreign goods.",
+          "effects": [10, -5, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "There should exist self-sufficient local cooperatives within the economy.",
+          "effects": [0, -10, 0, 0, 0, -5, 0]
+        },
+        {
+          "text": "The state should have the ability to harshly punish negative forces in the economy.",
+          "effects": [0, 0, -10, 0, 0, 0, -5]
+        },
+        {
+          "text": "Nationalised education and health care systems are of great importance in a strong society.",
+          "effects": [0, 0, 0, -10, 0, -5, 0]
+        },
+        {
+          "text": "Our economic order should be directly linked to ecology.",
+          "effects": [0, -5, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "It is best if the state's economic policies are flexible and can be changed to suit the current situation.",
+          "effects": [-5, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Corporate taxes should be increased.",
+          "effects": [0, 0, 0, 0, 0, -5, -10]
+        },
+        {
+          "text": "The issuing of national patents is good for the economy.",
+          "effects": [10, 0, 0, -5, 0, 0, 0]
+        },
+        {
+          "text": "It is damaging to the economy to be reliant on foreign countries.",
+          "effects": [0, -10, 0, 0, -5, 0, 0]
+        },
+        {
+          "text": "The state has no right to interfere in the private affairs of individuals.",
+          "effects": [0, 0, 10, 0, 0, 5, 0]
+        },
+        {
+          "text": "Railways and other transport systems should be nationalised.",
+          "effects": [0, 0, -5, -10, 0, 0, 0]
+        },
+        {
+          "text": "Nations are better off having an organic economy that is tied to nature.",
+          "effects": [0, -5, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "State intervention in the economy almost always results in catastrophe.",
+          "effects": [0, 0, 5, 0, 0, 10, 0]
+        },
+        {
+          "text": "Tax cuts are necessary in order to maintain a prosperous economy.",
+          "effects": [0, 0, 0, 0, 0, 5, 10]
+        },
+        {
+          "text": "Trade restrictions and import taxes are good.",
+          "effects": [10, 0, 0, -5, 0, 0, 0]
+        },
+        {
+          "text": "Small-scale, free initiatives should be promoted within the country.",
+          "effects": [0, -10, 0, 0, -5, 0, 0]
+        },
+        {
+          "text": "A planned economy is best.",
+          "effects": [0, 0, -10, 0, 0, -5, 0]
+        },
+        {
+          "text": "It is better to have a nationalised banking system.",
+          "effects": [0, 0, 0, -10, 0, -5, 0]
+        },
+        {
+          "text": "An economy should be founded on competition and consumption.",
+          "effects": [0, 0, 0, 0, 10, 5, 0]
+        },
+        {
+          "text": "The bigger the government the better.",
+          "effects": [0, 0, -5, 0, 0, -10, 0]
+        },
+        {
+          "text": "Aside from funding necessary public programmes (the police force, etc) taxation should be as limited as possible.",
+          "effects": [0, 0, 5, 0, 0, 0, 10]
+        },
+        {
+          "text": "Trade distorting policies don't work.",
+          "effects": [-10, 0, 5, 0, 0, 0, 0]
+        },
+        {
+          "text": "It is better if the state receives significant support from foreign countries and corporations.",
+          "effects": [0, 10, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "It is better if private businesses are left to their own devices.",
+          "effects": [0, 0, 10, 0, 0, 0, 5]
+        },
+        {
+          "text": "Multinational corporations are more efficient than publicly-funded systems.",
+          "effects": [0, 0, 5, 10, 0, 0, 0]
+        },
+        {
+          "text": "Economies need to industrialise and modernise in order to flourish.",
+          "effects": [-5, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "A functioning economy will always need to have a complex set of rules and guidelines kept in place.",
+          "effects": [0, 0, 0, 0, 0, -10, -5]
+        },
+        {
+          "text": "Higher income households should be expected to pay a higher income tax.",
+          "effects": [0, 0, 0, 0, 0, -5, -10]
+        },
+        {
+          "text": "Unregulated access to foreign markets is a good thing.",
+          "effects": [-10, 0, 5, 0, 0, 0, 0]
+        },
+        {
+          "text": "Economic powers such as the EU should provide support to struggling countries.",
+          "effects": [0, 10, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "Every intervention in the economy is a potential threat to individual liberty.",
+          "effects": [0, 0, 10, 0, 0, 5, 0]
+        },
+        {
+          "text": "Foreign businesses should be encouraged to reside wherever they like.",
+          "effects": [0, 0, 0, 10, 0, 5, 0]
+        },
+        {
+          "text": "An economy that utilises foraging techniques, such as hunting and gathering, is preferable.",
+          "effects": [0, 0, -5, 0, -10, 0, 0]
+        },
+        {
+          "text": "The economy should be organised organically, devoid of planning and rules.",
+          "effects": [0, 0, 5, 0, 0, 10, 0]
+        },
+        {
+          "text": "We should increase taxes so that we can fund better social systems.",
+          "effects": [0, 0, 0, 0, 0, -5, -10]
+        },
+        {
+          "text": "Trade should be heavily regulated.",
+          "effects": [10, -5, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Ideally, states should depend on and support each other.",
+          "effects": [0, 10, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "Statist dreams of utopia are one of the biggest threats to economic prosperity.",
+          "effects": [0, 0, 10, 0, 0, 5, 0]
+        },
+        {
+          "text": "We're better off with a modern, globalised economy.",
+          "effects": [0, 0, 0, 10, 5, 0, 0]
+        },
+        {
+          "text": "Monetary value or currency is at the core of any functioning economy.",
+          "effects": [0, 0, 0, 0, 10, 5, 0]
+        },
+        {
+          "text": "An economic structure should be fluid, lacking in formalisation, paperwork and rules.",
+          "effects": [0, 0, 0, 0, -5, 10, 0]
+        },
+        {
+          "text": "All citizens should pay taxes at the same rate.",
+          "effects": [0, 0, 5, 0, 0, 0, 10]
+        },
+        {
+          "text": "Overall, protectionism has had a net negative effect on economies.",
+          "effects": [-10, 0, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "Economies should support each other and promote inter-dependence.",
+          "effects": [0, 10, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "The economy should obey the state; never the other way around.",
+          "effects": [0, 0, -10, 0, -5, 0, 0]
+        },
+        {
+          "text": "Globalisation is inevitable and for the better.",
+          "effects": [0, 0, 0, 10, 5, 0, 0]
+        },
+        {
+          "text": "We should promote commercial lifestyles of profit and usury.",
+          "effects": [0, 0, 5, 0, 10, 0, 0]
+        },
+        {
+          "text": "Strong public administration is needed in order to uphold the law, maximise efficiency and prevent favoritism.",
+          "effects": [0, 0, 0, 0, 0, -10, -5]
+        },
+        {
+          "text": "Taxpayers shouldn't be expected to fund expensive social systems.",
+          "effects": [0, 0, 5, 0, 0, 0, 10]
+        },
+        {
+          "text": "The government should have major control over the economic ins and outs of the country.",
+          "effects": [10, -5, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "For an economy to function the state needs to have significant control over it.",
+          "effects": [0, 0, -10, 0, 0, 0, -5]
+        },
+        {
+          "text": "We should strive towards a universal, global economy.",
+          "effects": [0, 0, 0, 10, 5, 0, 0]
+        },
+        {
+          "text": "Bureaucracy is needed so that law, order and a functioning economy can be maintained.",
+          "effects": [0, 0, -5, 0, 0, -10, 0]
+        },
+        {
+          "text": "Specialised teams should run different aspects of the economy as opposed to a single bureaucratic body.",
+          "effects": [0, 0, 5, 0, 0, 10, 0]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Personality Compass",
+      "description": "",
+      "color": "e2711d",
+      "preamble": "You will be asked a number of questions. These will be in the form of a statement. For each of these questions you should state whether you agree or disagree (broadly speaking). Please try to answer as honestly as possible.",
+      "testType": 0,
+      "instruction": "How much do you agree/disagree with the following statement?",
+      "questions": [
+        {
+          "text": "I'm quite an imaginative person.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I get stressed quite easily.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I get irritated easily.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I keep my home/office very clean.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I'm not very artistic or creative.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I am usually relaxed.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I rarely hold grudges against others.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I do the smallest amount work needed to get by.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I have an interest in art, such as music, literature or paintings.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I have frequent mood swings.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "People sometimes tell me that I'm too judgemental of others.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I don't let impulses interfere with my behaviour.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "Museums and art galleries bore me.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I rarely feel down.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I'm quick to forgive others.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I'm a very impulsive person.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I like eccentric and unconventional people.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I often worry about the little things.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I have a quick temper.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I follow a schedule and plan ahead.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I find discussions about philosophy to be quite boring.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I'm not too concerned with others' feelings.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I'm quite tolerant when it comes to judging others.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I have a messy room/desk.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I enjoy looking at atlases or maps of the world.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I sympathise with other people's feelings.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I often get into arguments when people tell me I'm wrong.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I'm a perfectionist.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I don't have much of an imagination.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I don't mind dangerous jobs or activities.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I rarely get angry.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "Sometimes I have difficulty working due to being disorganised.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I enjoy learning about the histories and cultures of other countries.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I am very fearful when it comes to dangerous situations.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I'm very stubborn.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I pay close attention to minor details.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I wouldn't enjoy reading through an encylopedia.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I'm less sentimental than most people.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I try to be positive, even when people mess up.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I forget to put things back in their proper place.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I have lots of good ideas.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I often feel down.",
+          "effects": [10, 0]
+        },
+        {
+          "text": "I find it difficult to compromise with others when I'm sure I'm right.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I'm very driven when it comes to achieving goals.",
+          "effects": [0, 10]
+        },
+        {
+          "text": "I'm not as inquisitive as most people.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "I rarely worry about things.",
+          "effects": [-10, 0]
+        },
+        {
+          "text": "When others disagree with me I can be flexible in my opinions.",
+          "effects": [0, -10]
+        },
+        {
+          "text": "I often neglect my duties.",
+          "effects": [0, -10]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Literature",
+      "description": "Do you prefer realistic literature or fantasy? Dark or light-hearted? This test breaks down your literary taste into seven different dichotomies!",
+      "color": "3f88c5",
+      "preamble": "You will be asked a number of questions. These will be in the form of either a statement or a scenario. For each of these questions you should state whether you agree or disagree (broadly speaking). Please try to answer as honestly as possible.",
+      "testType": 0,
+      "instruction": "How much do you agree/disagree with the following statement?",
+      "questions": [
+        {
+          "text": "I prefer prose that is direct and straight to the point.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "It is better if a story maintains a solid and traditional structure with regard to pacing, characters, etc.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "All great artists are philosophers first and foremost.",
+          "effects": [0, 0, 0, 0, 0, 0, 10]
+        },
+        {
+          "text": "Literature allows us to live out our dreams.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I prefer stories that take on the world.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Art is most compelling when it's at its darkest.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "I'm most interested in works that invert or play around with traditional literary structures.",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "I'm interested in stories that act as a gateway to another world.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I prefer authors who never use a long word when a short one will do.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Works that feature clear, archetypal representations of good and evil are preferable to more philosophical texts.",
+          "effects": [0, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "The most exciting questions relate to progress and technology in the modern world.",
+          "effects": [0, 0, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "I prefer stories that are set in the real world as opposed to an imaginary one.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Literature with grandiose and dazzling prose is best.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Literature should be optimistic about the future.",
+          "effects": [0, 0, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "I want the work I read to challenge me ideologically.",
+          "effects": [0, 0, 0, 0, 0, 0, 10]
+        },
+        {
+          "text": "I appreciate it when an author clearly puts forward a moral doctrine in his or her work.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "I'm most interested in stories that focus on the day-to-day lives of people.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I prefer stories that have a clear and direct style and aren't experimental in structure or prose.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "I prefer it when the story takes centre stage as opposed to the author's style.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Stories are at their best when they are inspirational or hopeful.",
+          "effects": [0, 0, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "The death of a beautiful woman is one of the most poetic topics in literature.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Traditional towns provide a better backdrop than modern metropolises when it comes to analysing human nature.",
+          "effects": [0, 0, 0, -10, 0, 0, 0]
+        },
+        {
+          "text": "One of the primary purposes of literature should be to instill a love of life in the reader.",
+          "effects": [0, 0, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Authors should focus on telling direct stories before diving into profound questions.",
+          "effects": [0, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "Literature provides an ideal opportunity to promote healthy moral values.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "A small number of characters and settings are preferable in a story.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I enjoy ironic and sarcastic literature.",
+          "effects": [0, 0, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "Stories set in the modern technological world are more compelling than those set in the old traditional world.",
+          "effects": [0, 0, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "I tend to prefer literature which is full of passion and life as opposed to literature that is nihilistic and dark.",
+          "effects": [0, 0, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "It is vital that a story should espouse strong moral virtues.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "Stories about ghouls and monsters often say a lot more about people than stories merely about humans.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Despair is at the center of all great art.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "I gravitate towards literature that analyses the modern cosmopolitan world.",
+          "effects": [0, 0, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "Literature that lacks a moral message isn't very literary at all.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "I prefer authors who have unorthodox writing styles and are willing to experiment.",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Individual lives are always more fascinating to examine than the grander picture.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I'd rather read to explore dangerous questions than to receive comfortable answers.",
+          "effects": [0, 0, 0, 0, 0, 0, 10]
+        },
+        {
+          "text": "I prefer stories that feature a small and intimate cast of archetypal characters.",
+          "effects": [0, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "I'm interested in authors who use comic prose to accurately critique dogma.",
+          "effects": [0, 0, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "Literature, in its purest form, is about escaping reality.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I prefer stories set in the countryside or in small communities.",
+          "effects": [0, 0, 0, -10, 0, 0, 0]
+        },
+        {
+          "text": "I'd rather read stories that are comforting and attractive as opposed to challenging and harsh.",
+          "effects": [0, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "I enjoy literature that pulls moralism apart.",
+          "effects": [0, 0, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "I find nature and the ecosystem more inspiring than the day-to-day lives of most people.",
+          "effects": [0, 0, 0, -10, 0, 0, 0]
+        },
+        {
+          "text": "Literature is best when it's as coherent as possible and lacking in pretensions.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "I prefer stories with a wide and cinematic scope.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I'm drawn to literature that represents life in a realistic and authentic way.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "Works of great beauty are timeless and should be celebrated.",
+          "effects": [0, 0, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Most great works are set in major cities or global states.",
+          "effects": [0, 0, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "I'm more intrigued by stories that are esoteric or cryptic.",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "I'm most interested in works that explore and advocate a coherent moral system.",
+          "effects": [0, 0, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "Literature allows one to escape from the meaninglessness of individual life and explore humanity in a greater picture.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I'm drawn towards literature with a darker aesthetic.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Art should accurately represent life in its truest form.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I'm most attracted to literature that focuses on 'the simple life' and living in harmony with nature.",
+          "effects": [0, 0, 0, -10, 0, 0, 0]
+        },
+        {
+          "text": "I enjoy reading authors who raise grand metaphysical and epistemological questions.",
+          "effects": [0, 0, 0, 0, 0, 0, 10]
+        },
+        {
+          "text": "The greatest stories follow a clear, concise and rigid style.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "I prefer authors with a refined and lavish style as opposed to a direct one.",
+          "effects": [10, 0, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "I enjoy it when an author dabbles with the avant-garde.",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Works that deal with the psychology of industrial society interest me more than those that deal with traditional and 'natural' societies.",
+          "effects": [0, 0, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "I'd rather read stories that are devoid of challenging or controversial material.",
+          "effects": [0, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "Life is suffering and art should reflect this in a clear way.",
+          "effects": [0, 0, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "I prefer imaginative or dreamlike literature.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "One of the primary purposes of literature should be to lambast puritans and zealots.",
+          "effects": [0, 0, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "In literature, village life is more compelling than city life.",
+          "effects": [0, 0, 0, -10, 0, 0, 0]
+        },
+        {
+          "text": "There's enough magic and wonder in our own world - no need to imagine new ones.",
+          "effects": [0, -10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "It's not worth reading stories unless they raise profound existential questions.",
+          "effects": [0, 0, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "Art is at its best when it's challenging the traditional order of its genre or field.",
+          "effects": [0, 0, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Literature is about growing old enough to read fairy tales again.",
+          "effects": [0, 10, 0, 0, 0, 0, 0]
+        },
+        {
+          "text": "For a story to hold my attention it needs to have a solid structure and maintain archetypal consistency.",
+          "effects": [0, 0, 0, 0, 0, -10, 0]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Memes",
+      "description": "Do you like memes? /r/FellowKids here we come...",
+      "color": "ddbdd5",
+      "preamble": "You may need to take the test in landscape mode if you are viewing the site on a mobile phone.<br>For each question you will be shown two memes. You should choose the meme you prefer and indicate the degree to which you prefer it.<br><br><i>Note: some users may find some of the images used in this test offensive; please bear this in mind if you are easily upset or offended.</i>",
+      "testType": 1,
+      "instruction": "Choose which meme you prefer and to what degree you prefer it.",
+      "questions": [
+        {
+          "imageA": "https://i.ibb.co/gvyM25W/1.jpg",
+          "imageB": "https://i.ibb.co/Xt3XtT3/1.jpg",
+          "effects": [10, 0, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/fnR7jGq/1.jpg",
+          "imageB": "https://i.ibb.co/h1sn3hR/1.jpg",
+          "effects": [0, 10, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/k05ZnG5/1.png",
+          "imageB": "https://i.ibb.co/wSdkKM4/1.jpg",
+          "effects": [0, 0, 10, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/F8BMPd6/1.jpg",
+          "imageB": "https://i.ibb.co/8ztbDgK/1.jpg",
+          "effects": [0, 0, 0, 10, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/q9L7kqh/1.jpg",
+          "imageB": "https://i.ibb.co/2gF7jwm/1.jpg",
+          "effects": [0, 0, 0, 0, 10]
+        },
+        {
+          "imageA": "https://i.ibb.co/F0y6q75/2.png",
+          "imageB": "https://i.ibb.co/DtJCc1k/2.jpg",
+          "effects": [10, 0, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/cLVrT79/2.jpg",
+          "imageB": "https://i.ibb.co/dmHkBTw/2.jpg",
+          "effects": [0, 10, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/W6CbnGQ/2.png",
+          "imageB": "https://i.ibb.co/9v6CrDt/2.jpg",
+          "effects": [0, 0, 10, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/NsqMn3D/2.png",
+          "imageB": "https://i.ibb.co/4856Zpd/2.jpg",
+          "effects": [0, 0, 0, 10, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/H2DLYzc/2.jpg",
+          "imageB": "https://i.ibb.co/09dJ7jb/2.jpg",
+          "effects": [0, 0, 0, 0, 10]
+        },
+        {
+          "imageA": "https://i.ibb.co/GHnHMK1/3.png",
+          "imageB": "https://i.ibb.co/9qWR4bG/3.jpg",
+          "effects": [10, 0, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/ZBSyzfv/3.jpg",
+          "imageB": "https://i.ibb.co/tsLzXgh/3.jpg",
+          "effects": [0, 10, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/Q9C2Gw6/3.png",
+          "imageB": "https://i.ibb.co/5Y10bvw/3.jpg",
+          "effects": [0, 0, 10, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/gvy25t2/3.jpg",
+          "imageB": "https://i.ibb.co/HVtr21N/3.jpg",
+          "effects": [0, 0, 0, 10, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/n0KVByt/3.jpg",
+          "imageB": "https://i.ibb.co/1MBMT0K/3.jpg",
+          "effects": [0, 0, 0, 0, 10]
+        },
+        {
+          "imageA": "https://i.ibb.co/QkGtzGc/4.jpg",
+          "imageB": "https://i.ibb.co/GF3CmN3/4.jpg",
+          "effects": [10, 0, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/qRkQCF1/4.jpg",
+          "imageB": "https://i.ibb.co/4YgRT0x/4.jpg",
+          "effects": [0, 10, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/jVV2FMQ/4.jpg",
+          "imageB": "https://i.ibb.co/nrdy8FS/4.jpg",
+          "effects": [0, 0, 10, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/cwPLN1W/4.png",
+          "imageB": "https://i.ibb.co/DQ806P5/4.jpg",
+          "effects": [0, 0, 0, 10, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/qBLgp7C/4.png",
+          "imageB": "https://i.ibb.co/NspFCnm/4.jpg",
+          "effects": [0, 0, 0, 0, 10]
+        },
+        {
+          "imageA": "https://i.ibb.co/N7V8NWm/5.jpg",
+          "imageB": "https://i.ibb.co/cF70jZH/5.jpg",
+          "effects": [10, 0, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/bmqS0kS/5.png",
+          "imageB": "https://i.ibb.co/0Yvf482/5.jpg",
+          "effects": [0, 10, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/mrnyHwZ/5.png",
+          "imageB": "https://i.ibb.co/6gr4jyZ/5.jpg",
+          "effects": [0, 0, 10, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/TkpPNwC/5.png",
+          "imageB": "https://i.ibb.co/NxDqPVY/5.jpg",
+          "effects": [0, 0, 0, 10, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/rtj6kTr/5.jpg",
+          "imageB": "https://i.ibb.co/4pjrGxZ/5.jpg",
+          "effects": [0, 0, 0, 0, 10]
+        },
+        {
+          "imageA": "https://i.ibb.co/jWz3mb6/6.png",
+          "imageB": "https://i.ibb.co/3RtgRbs/6.jpg",
+          "effects": [10, 0, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/CmLgdqS/6.png",
+          "imageB": "https://i.ibb.co/640pTd1/6.jpg",
+          "effects": [0, 10, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/3zsXpBp/6.jpg",
+          "imageB": "https://i.ibb.co/LCRM3F7/6.jpg",
+          "effects": [0, 0, 10, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/GkR8dPB/6.jpg",
+          "imageB": "https://i.ibb.co/jwnHdZH/6.jpg",
+          "effects": [0, 0, 0, 10, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/r0LB2bK/6.jpg",
+          "imageB": "https://i.ibb.co/qFJVGCC/6.jpg",
+          "effects": [0, 0, 0, 0, 10]
+        },
+        {
+          "imageA": "https://i.ibb.co/NVtrnhC/7.png",
+          "imageB": "https://i.ibb.co/ph56Knv/7.jpg",
+          "effects": [10, 0, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/GpnHVvL/7.jpg",
+          "imageB": "https://i.ibb.co/gwBDRZ7/7.jpg",
+          "effects": [0, 10, 0, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/ZVFFjrR/7.jpg",
+          "imageB": "https://i.ibb.co/VJBDwr3/7.jpg",
+          "effects": [0, 0, 10, 0, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/ctK6LjQ/7.jpg",
+          "imageB": "https://i.ibb.co/fdVxysQ/7.jpg",
+          "effects": [0, 0, 0, 10, 0]
+        },
+        {
+          "imageA": "https://i.ibb.co/5WNK1bk/7.jpg",
+          "imageB": "https://i.ibb.co/Sr6Y9G2/7.jpg",
+          "effects": [0, 0, 0, 0, 10]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Political Philosophy",
+      "description": "Do you lean to the left or to the right politically? This test will attempt to discover your philosophical beliefs regarding politics along a number of axes.",
+      "color": "347e45",
+      "preamble": "Unlike most online political quizzes this test will attempt to determine your basic political beliefs through philosophically-oriented questions - as opposed to questions directly related to policy.<br><br>You will be asked a number of questions. These will be in the form of either a statement or a scenario. For each of these questions you should state whether you agree or disagree (broadly speaking). Please try to answer as honestly as possible.",
+      "testType": 2,
+      "instruction": "How much do you agree/disagree with the following statement?",
+      "questions": [
+        {
+          "text": "Hierarchies will inevitably be formed in every society.",
+          "effects": [-9, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "We are living in a post-modern age with no discernible 'true' reality.",
+          "effects": [5, 0, 0, 5, 0, 0]
+        },
+        {
+          "text": "A truly democratic system is unrealistic.",
+          "effects": [-14, 0, 0, 0, -15, 0]
+        },
+        {
+          "text": "The penal system is designed to protect the interests of the ruling class.",
+          "effects": [10, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "We must retain the core constitutional principles of our institutions.",
+          "effects": [-10, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "The traditions of law and justice in my community must be greatly respected.",
+          "effects": [-10, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "We should not question sovereign authority so long as it provides peace.",
+          "effects": [-13, 0, 0, 0, 0, -15]
+        },
+        {
+          "text": "A society that promotes equal outcomes for all is desirable.",
+          "effects": [14, 0, 0, 0, 15, 0]
+        },
+        {
+          "text": "The traditional family is, unfortunately, the embodiment of an authoritarian personality and, ultimately, fascism.",
+          "effects": [13, 0, 0, 0, 0, 15]
+        },
+        {
+          "text": "There is no grand tradition of anything only various competing claims.",
+          "effects": [10, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "We have no transcendent purpose beyond our own material pleasure.",
+          "effects": [14, 15, 0, 0, 0, 0]
+        },
+        {
+          "text": "Collective obligations that are placed on an individual by society are inherently immoral.",
+          "effects": [8, 0, 0, 0, 0, 10]
+        },
+        {
+          "text": "Corruption and decay is an 'iron law' of human societies.",
+          "effects": [-10, 0, -10, 0, 0, 0]
+        },
+        {
+          "text": "Humanity only experiences linear growth - not decay.",
+          "effects": [5, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "Societies develop through a cooperative social contract.",
+          "effects": [-5, 0, 0, -5, 0, 0]
+        },
+        {
+          "text": "The concepts of 'good' and 'evil' are subjective.",
+          "effects": [4, 5, 0, 0, 0, 0]
+        },
+        {
+          "text": "The industrial revolution and its consequences have been largely negative.",
+          "effects": [-15, 0, -15, 0, 0, 0]
+        },
+        {
+          "text": "People should be treated equally regardless of their social group.",
+          "effects": [9, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Technological development has brought about a better world.",
+          "effects": [10, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "To ground any coherent worldview one needs higher spiritual values.",
+          "effects": [-14, -15, 0, 0, 0, 0]
+        },
+        {
+          "text": "Religion is merely a distraction from the material world.",
+          "effects": [14, 15, 0, 0, 0, 0]
+        },
+        {
+          "text": "Language developed as a tool to dominate and exclude 'the other'.",
+          "effects": [10, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "Human society should be viewed through a pessimistic lens.",
+          "effects": [-8, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "Societies of vulnerability will always defeat societies of exclusion.",
+          "effects": [8, 0, 0, 0, 0, 10]
+        },
+        {
+          "text": "A liberal democracy is the final stage in societal development.",
+          "effects": [15, 0, 15, 0, 0, 0]
+        },
+        {
+          "text": "There is more to this world than the purely physical.",
+          "effects": [-9, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "All people possess a soul.",
+          "effects": [-4, -5, 0, 0, 0, 0]
+        },
+        {
+          "text": "History can be understood as a great march of progress.",
+          "effects": [5, 0, 5, 0, 0, 0]
+        },
+        {
+          "text": "Human nature is nasty, brutish and short, it must be repressed by society.",
+          "effects": [-13, 0, 0, 0, 0, -15]
+        },
+        {
+          "text": "We are defined morally, at least in part, by our actions.",
+          "effects": [-4, -5, 0, 0, 0, 0]
+        },
+        {
+          "text": "If a society is not grounded by ancestral traditions it will fall into chaos.",
+          "effects": [-15, 0, 0, -15, 0, 0]
+        },
+        {
+          "text": "We should strive to eliminate social biases toward minority groups.",
+          "effects": [9, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Humanity can be relied on to self-regulate and self-reform.",
+          "effects": [10, 0, 10, 0, 0, 0]
+        },
+        {
+          "text": "We are currently in the dark age of human flourishing.",
+          "effects": [-15, 0, -15, 0, 0, 0]
+        },
+        {
+          "text": "A collective founded on absolute values will always outlive those founded on relative values.",
+          "effects": [-10, 0, 0, -10, 0, 0]
+        },
+        {
+          "text": "Without a constraining force society will always tend towards immorality.",
+          "effects": [-15, 0, -15, 0, 0, 0]
+        },
+        {
+          "text": "It is better to die standing than to live on one's knees.",
+          "effects": [4, 5, 0, 0, 0, 0]
+        },
+        {
+          "text": "All institutions are biased towards their own cultural background.",
+          "effects": [10, 0, 0, 10, 0, 0]
+        },
+        {
+          "text": "No institution can be truly egalitarian.",
+          "effects": [-4, 0, 0, 0, -5, 0]
+        },
+        {
+          "text": "Without God and higher ideals institutions will collapse.",
+          "effects": [-15, 0, 0, -15, 0, 0]
+        },
+        {
+          "text": "Some people will always be more successful than others.",
+          "effects": [-9, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "Our modern world is progressing towards a utopia.",
+          "effects": [15, 0, 15, 0, 0, 0]
+        },
+        {
+          "text": "Man's natural state is egalitarian and pacifistic.",
+          "effects": [8, 0, 0, 0, 0, 10]
+        },
+        {
+          "text": "We can best pursue meaning by living disciplined and virtuous lives.",
+          "effects": [-14, -15, 0, 0, 0, 0]
+        },
+        {
+          "text": "Different combinations of social identities produce unique forms of disadvantage and oppression.",
+          "effects": [9, 0, 0, 0, 10, 0]
+        },
+        {
+          "text": "Science and rationality are best when it comes to describing our world.",
+          "effects": [9, 10, 0, 0, 0, 0]
+        },
+        {
+          "text": "There is more to life than the pursuit of pleasure.",
+          "effects": [-9, -10, 0, 0, 0, 0]
+        },
+        {
+          "text": "Liberation of the individual from all arbitrary boundaries (race, gender, etc.) is ideal.",
+          "effects": [8, 0, 0, 0, 0, 10]
+        },
+        {
+          "text": "Social relations should be understood, primarily, as expressions of tyrannical power.",
+          "effects": [15, 0, 0, 15, 0, 0]
+        },
+        {
+          "text": "Societies tend toward immorality and, as such, they require a strong leader to maintain order.",
+          "effects": [-13, 0, 0, 0, 0, -15]
+        },
+        {
+          "text": "Society will always consist of rulers and subjects.",
+          "effects": [-9, 0, 0, 0, -10, 0]
+        },
+        {
+          "text": "The ideas of progress and rationality are symptoms of societal decline.",
+          "effects": [-15, 0, -15, 0, 0, 0]
+        },
+        {
+          "text": "Every civilization goes through a birth, a rise and a fall.",
+          "effects": [-5, 0, -5, 0, 0, 0]
+        },
+        {
+          "text": "The most successful people are those who are the most deserving of their success.",
+          "effects": [-4, 0, 0, 0, -5, 0]
+        },
+        {
+          "text": "Individuals have a duty towards upholding the collective good.",
+          "effects": [-8, 0, 0, 0, 0, -10]
+        },
+        {
+          "text": "Societal hierarchies often come about through the oppression of disadvantaged groups.",
+          "effects": [14, 0, 0, 0, 15, 0]
+        },
+        {
+          "text": "Direct or pure democracy is the ideal form of government.",
+          "effects": [14, 0, 0, 0, 15, 0]
+        },
+        {
+          "text": "An action is generally good if its consequences are good.",
+          "effects": [4, 5, 0, 0, 0, 0]
+        },
+        {
+          "text": "Peaceful societies are rare and fragile.",
+          "effects": [-3, 0, 0, 0, 0, -5]
+        },
+        {
+          "text": "Through sexual exploration and liberation we can escape the societies of control.",
+          "effects": [13, 0, 0, 0, 0, 15]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Victimhood",
+      "description": "Based on the <a class='link-no-underline' href='https://www.researchgate.net/publication/341548585_The_Tendency_for_Interpersonal_Victimhood_The_Personality_Construct_and_its_Consequences' target='_blank'>Tendency for Interpersonal Victimhood</a>, this test will attempt to determine your perceived level of victimhood across your interpersonal relationships.",
+      "color": "e97e20",
+      "preamble": "Based on the <a class='link-no-underline' href='https://www.researchgate.net/publication/341548585_The_Tendency_for_Interpersonal_Victimhood_The_Personality_Construct_and_its_Consequences' target='_blank'>Tendency for Interpersonal Victimhood</a>, this test will attempt to determine your perceived level of victimhood across your interpersonal relationships.<br><br>The test consists of 22 statements. You should state the degree to which you agree or disagree with each statement (broadly speaking). Please try to answer as honestly as possible.<br><br>Results will be broken down into four factors: need for recognition, moral elitism, lack of empathy and rumination.",
+      "testType": 2,
+      "instruction": "How much do you agree/disagree with the following statement?",
+      "questions": [
+        {
+          "text": "It is important to me that people who hurt me acknowledge that an injustice has been done to me.",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "text": "It is important to me that the person who offended me admits that his or her behavior was wrong.",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "text": "It makes me angry when people don't believe that I was hurt.",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "text": "It is important to me to receive an apology from people who offended me.",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "text": "It is important to me that the person who offended me feels guilty for what he or she did.",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "text": "I feel angry when people ignore my feeling of being hurt.",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "text": "I remain considerate of other people even when they don't deserve it.",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "text": "I think I am much more conscientious and moral in my relations with other people compared to their treatment of me.",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "text": "People often take advantage of my kindness.",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "text": "I give others much more than I receive from them.",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "text": "I feel that other people don't hesitate to take advantage of my weaknesses.",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "text": "People demand a lot of me without expressing gratitude.",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "text": "When people who are close to me feel hurt by my actions, it is very important for me to clarify that justice is on my side.",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "text": "People who are offended by me are only thinking of themselves.",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "text": "People who claim that I behaved wrongly want me to admit it so they can take advantage of the situation.",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "text": "People claim that I have hurt them because they cannot see that they are the ones hurting me.",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "text": "The main reason that people are offended by me is that they cannot see things from my perspective.",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "text": "It is very important to me that people who were offended by me realize that they are also in the wrong.",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "text": "It is very hard for me to stop thinking about the injustice others have done to me.",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "text": "Days after the offense I am very preoccupied by the injustice done to me.",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "text": "I am flooded by more anger than I would like every time I remember people who hurt me.",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "text": "I am flooded by negative feelings every time I remember people who hurt me.",
+          "effects": [0, 0, 0, 1]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Sensation Seeking",
+      "description": "Based on <a class='link-no-underline' href='https://scienceofbehaviorchange.org/measures/zuckerman-sensation-seeking-scale-v/' target='_blank'>Zuckerman's Sensation Seeking Scale</a>, this test will attempt to determine how inclined you are to seek out varied, novel and intense experiences.",
+      "color": "ec4649",
+      "preamble": "Based on <a class='link-no-underline' href='https://scienceofbehaviorchange.org/measures/zuckerman-sensation-seeking-scale-v/' target='_blank'>Zuckerman's Sensation Seeking Scale</a>, this test will attempt to determine how inclined you are to seek out varied, novel and intense experiences.<br><br>The test consists of 40 questions. Each question will pose two separate scenarios: choose the scenario that you would prefer (you must choose a scenario). If neither scenario appeals to you then pick the one that you would dislike the least.<br><br>Results will be broken down into four subscales: thrill and adventure seeking, experience seeking, disinhibition and boredom susceptibility.",
+      "testType": 3,
+      "instruction": "Which of the two statements describes you best?",
+      "questions": [
+        {
+          "textA": "I like 'wild' uninhibited parties",
+          "textB": "I prefer quiet parties with good conversation",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "I can't stand watching a movie that I've seen before",
+          "textB": "There are some movies I enjoy seeing a second or even a third time",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I often wish I could be a mountain climber",
+          "textB": "I can't understand people who risk their necks climbing mountains",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I like some of the earthy body smells",
+          "textB": "I dislike all body odors",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "I get bored seeing the same old faces",
+          "textB": "I like the comfortable familiarity of everyday friends",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I like to explore a strange city or section of town by myself even if it means getting lost",
+          "textB": "I prefer a guide when I am in a place I do not know well",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "When you can predict almost everything a person will do and say he or she must be a bore",
+          "textB": "I dislike people who do or say things just to shock or upset others",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I usually don't enjoy a movie or play where I can predict what will happen in advance",
+          "textB": "I don't mind watching a movie or a play where I can predict what will happen in advance",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I have tried marijuana or would like to",
+          "textB": "I would like to try some of the new drugs that produce hallucinations",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "I would like to try some of the new drugs that produce hallucinations",
+          "textB": "I would not like to try any drug which might produce strange and dangerous effects on me",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "I sometimes like to do things that are a little frightening",
+          "textB": "A sensible person avoids activities that are dangerous",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I enjoy the company of real 'swingers'",
+          "textB": "I dislike 'swingers' (people who are uninhibited and free about sex)",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "I often like to get high (drinking liquor or smoking marijuana)",
+          "textB": "I find that stimulants make me uncomfortable",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "I like to try new foods that I have never tasted before",
+          "textB": "I order the dishes with which I am familiar so as to avoid disappointment and unpleasantness",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "Looking at someone's home movies or travel slides bores me tremendously",
+          "textB": "I enjoy looking at home movies or travel slides",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I would like to take up the sport of water skiing",
+          "textB": "I would not like to take up water skiing",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I would like to try surf boarding",
+          "textB": "I would not like to try surf boarding",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I would like to take off on a trip with no pre-planned or definite routes or timetable",
+          "textB": "When I go on a trip I like to plan my route and timetable fairly carefully",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "I would like to make friends in some of the 'far out' groups like artists or 'punks'",
+          "textB": "I prefer the 'down to earth' kinds of people as friends",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "I would like to learn to fly an airplane",
+          "textB": "I would not like to learn to fly an airplane",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I would like to go scuba diving",
+          "textB": "I prefer the surface of the water to the depths",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I would like to meet some persons who are homosexual (men or women)",
+          "textB": "I stay away from anyone I suspect of being 'gay or lesbian'",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "I would like to try parachute jumping",
+          "textB": "I would never want to try jumping out of a plane - with or without a parachute",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I prefer friends who are excitingly unpredictable",
+          "textB": "I prefer friends who are reliable and predictable",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I like to have new and exciting experiences and sensations even if they are a little frightening / unconventional or illegal",
+          "textB": "I am not interested in experience for its own sake",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "I often ﬁnd beauty in the clashing colors and irregular forms of modern paintings",
+          "textB": "The essence of good art is in its clarity / symmetry of form and harmony of colors",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "I get very restless if I have to stay around home for any length of time",
+          "textB": "I enjoy spending time in the familiar surroundings of home",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I like to dive off the high board",
+          "textB": "I don't like the feeling I get standing on the high board (or I don't go near it at all)",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I like to date people who are physically exciting",
+          "textB": "I like to date people who share my values",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "Keeping the drinks full is the key to a good party",
+          "textB": "Heavy drinking usually ruins a party because some people get loud and boisterous",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "The worst social sin is to be a bore",
+          "textB": "The worst social sin is to be rude",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "A person should have considerable sexual experience before marriage",
+          "textB": "It's better if two married persons begin their sexual experience with each other",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "I could conceive of myself seeking pleasures around the world with the \"jet set\"",
+          "textB": "Even if I had the money I would not care to associate with flight rich persons like those in the \"jet set\"",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "I like people who are sharp and witty even if they do sometimes insult others",
+          "textB": "I dislike people who have their fun at the expensive of hurting the feelings of others",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I enjoy watching many of the 'sexy' scenes in movies",
+          "textB": "There is altogether too much portrayal of sex in movies",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "I feel best after taking a couple of drinks",
+          "textB": "Something is wrong with people who need liquor to feel good",
+          "effects": [0, 0, 1, 0]
+        },
+        {
+          "textA": "People should dress in individual ways even if the effects are sometimes strange",
+          "textB": "People should dress according to some standard of taste / neatness and style",
+          "effects": [0, 1, 0, 0]
+        },
+        {
+          "textA": "I would like to sail a long distance in a small but seaworthy sailing craft",
+          "textB": "Sailing long distances in small sailing crafts is foolhardy",
+          "effects": [1, 0, 0, 0]
+        },
+        {
+          "textA": "I have no patience with dull or boring persons",
+          "textB": "I find something interesting in almost every person I talk to",
+          "effects": [0, 0, 0, 1]
+        },
+        {
+          "textA": "I think I would enjoy the sensations of skiing very fast down a high mountain slope",
+          "textB": "Skiing down a high mountain slope is a good way to end up on crutches",
+          "effects": [1, 0, 0, 0]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Fear",
+      "description": "Based on <a class='link-no-underline' href='https://www.researchgate.net/publication/9242854_The_Development_of_a_Scale_to_Measure_Fear' target='_blank'>Geer's Fear Survey Schedule</a>, this test will attempt to determine how fearful you are; the test incorporates multiple fear factors to break down your results.",
+      "color": "331c5e",
+      "preamble": "Based on <a class='link-no-underline' href='https://www.researchgate.net/publication/9242854_The_Development_of_a_Scale_to_Measure_Fear' target='_blank'>Geer's Fear Survey Schedule</a>, this test will attempt to determine how fearful you are; the test incorporates multiple fear factors to break down your results.<br><br>The test consists of 52 items. An item may be a scenario, an object, etc. You must mark how fearful (or anxious) the item in question would usually make you. All items must be marked.<br><br>Results will be broken down into five fear factors: social anxiety, agoraphobia, fear of bodily injury/death/illness, fear of sexual/aggressive scenes, fear of harmless animals.",
+      "testType": 4,
+      "instruction": "The following object/scenario might inspire what level of fear/anxiety?",
+      "questions": [
+        {
+          "text": "Speaking in public.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Being teased.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Failure.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Entering a room where other people are already seated.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Strangers.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "People in authority.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Being watched working.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Being criticized.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Feeling rejected by others.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Feeling disapproved of.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Being ignored.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Making mistakes.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Looking foolish.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "Being alone.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Being in a strange place.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Crossing streets.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Falling.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "High places on land.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Journeys by train.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Journeys by bus.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Journeys by car.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Crowds.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Large open spaces.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Being in an elevator.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Enclosed places.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Aeroplanes.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Open wounds.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Dead people.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "People with deformities.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Receiving injections.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Seeing other people injected.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Sick people.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Witnessing surgical operations.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Human blood.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Animal blood.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Medical odours.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Cemeteries.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Doctors.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "One person bullying another.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "Tough looking people.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "Dirt.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "Sight of fighting.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "Ugly people.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "Strange shapes.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "Nude men.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "Nude women.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "Worms.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "Bats.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "Flying insects.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "Crawling insects.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "Mice.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "Harmless snakes.",
+          "effects": [0, 0, 0, 0, 1]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Obsessions and Compulsions",
+      "description": "Based on the <a class='link-no-underline' href='https://pubmed.ncbi.nlm.nih.gov/30089225/' target='_blank'>Padua Inventory</a>, this test will attempt to determine how obsessive-compulsive you are.",
+      "color": "629460",
+      "preamble": "Based on the <a class='link-no-underline' href='https://pubmed.ncbi.nlm.nih.gov/30089225/' target='_blank'>Padua Inventory</a>, this test will attempt to determine how obsessive-compulsive you are.<br><br>The test contains 39 questions. You should answer each question by considering how well the scenario/behaviour in the question applies to you. You must answer all questions.<br><br>Results will be broken down into five obsessive-compulsive factors: contamination and washing, dressing and grooming, checking, thoughts of harm, impulses to harm.",
+      "testType": 5,
+      "instruction": "Choose the reply which best seems to fit you.",
+      "questions": [
+        {
+          "text": "I feel my hands are dirty when I touch money.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "I think even the slightest contact with bodily secretions (perspiration, saliva, urine, etc.) may contaminate my clothes or somehow harm me.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "I find it difficult to touch an object when I know it has been touched by strangers or by certain people.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "I find it difficult to touch garbage or dirty things.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "I avoid using public toilets because I am afraid if disease and contamination.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "I avoid using public telephones because I am afraid of contagion and disease.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "I wash my hands more often and longer than necessary.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "I sometimes have to wash or clean myself simply because I think I may be dirty or 'contaminated'.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "If I touch something I think is 'contaminated', I immediately have to wash or clean myself.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "If an animal touches me, I feel dirty and immediately have to wash myself or change my clothing.",
+          "effects": [1, 0, 0, 0, 0]
+        },
+        {
+          "text": "I feel obliged to follow a particular order in dressing, undressing, and washing myself.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Before going to sleep, I have to do certain things in a certain order.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "Before going to bed, I have to hang up or fold my clothes in a special way.",
+          "effects": [0, 1, 0, 0, 0]
+        },
+        {
+          "text": "I have to do things several times before I think they are properly done.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "I tend to keep on checking things more often than necessary.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "I check and recheck gas and water taps and light switches after turning them off.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "I return home to check doors, windows, drawers, etc., to make sure they are properly shut.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "I keep checking forms, documents, checks, etc., in detail to make sure I have filled them in correctly.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "I keep on going back to see that matches, cigarettes, etc., are properly extinguished.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "When I handle money, I count and recount it several times.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "I check letters carefully many times before posting them.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "Sometimes I am not sure I have done things which in fact I knew I have done.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "When I read, I have the impression I have missed something important and must go back and reread the passage at least two or three times.",
+          "effects": [0, 0, 1, 0, 0]
+        },
+        {
+          "text": "I imagine catastrophic consequences as a result of absent-mindedness or minor errors which I make.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "I think or worry at length about having hurt someone without knowing it.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "When I hear about a disaster, I think it is somehow my fault.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "I sometimes worry at length for no reason that I have hurt myself or have some disease.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "I get upset and worried at the sight of knives, daggers, and other pointed objects.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "When I hear about a suicide or crime, I am upset for a long time and find it difficult to stop thinking about it.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "I invent useless worries about germs and disease.",
+          "effects": [0, 0, 0, 1, 0]
+        },
+        {
+          "text": "When I look down from a bridge or a very high window, I feel an impulse to throw myself into space.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "When I see a train approaching, I sometimes think I could throw myself under its wheels.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "At certain moments, I am tempted to tear off my clothes in public.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "While driving, I sometimes feel an impulse to drive the car into someone or something.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "Seeing weapons excites me and makes me think violent thoughts.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "I sometimes feel the need to break or damage things for no reason.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "I sometimes have an impulse to steal other people's belongings, even if they are of no use to me.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "I am sometimes almost irresistibly tempted to steal something from the supermarket.",
+          "effects": [0, 0, 0, 0, 1]
+        },
+        {
+          "text": "I sometimes have an impulse to hurt defenseless children or animals.",
+          "effects": [0, 0, 0, 0, 1]
+        }
+      ]
+    }
+  ]
+}
